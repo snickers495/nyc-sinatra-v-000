@@ -6,7 +6,7 @@ describe LandmarksController do
     bqe = Landmark.create(name: 'BQE', year_completed: 1961)
     bqe.figure = queenb
     bqe.save
-  end 
+  end
 
   after do
     Landmark.destroy_all
