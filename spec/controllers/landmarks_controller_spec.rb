@@ -63,7 +63,7 @@ describe LandmarksController do
     visit "/landmarks/#{@landmark.id}/edit"
     fill_in :name, with: "BQE!!!!"
     fill_in :year_completed, with: 9999
-    click_button "Edit Landmark" 
+    click_button "Edit Landmark"
     @landmark = Landmark.first
     expect(page.current_path).to eq("/landmarks/#{@landmark.id}")
   
